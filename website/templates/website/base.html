@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Lazy Guzty solutions{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'website/css/styles.css' %}">
+</head>
+
+<body>
+    <div>
+        <p>Welcome to Lazy Guzty Solutions</p>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about/">Service</a>
+            <a href="/contact/">Contact</a>
+        </nav>
+    </div>
+    
+
+    {% block content %} 
+    {% endblock %}
+</body>
+</html>
