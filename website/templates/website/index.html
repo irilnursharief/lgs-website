@@ -1,19 +1,52 @@
 {% extends 'website/base.html' %}
+{% load static %}
 {% block title %}Home{% endblock %}
 
 {% block content %}
-    <header>
-        <h2>Your Partner for</h2>
-        <h2>Innovative Solutions</h2>
-        <p>
-            Boost your business efficiency and 
-            simplify your operations with custom-built business applications.
-            We offer end-to-end solutions, dedicated support, and services,
-            all tailored to meet your unique needs, ensuring fast and efficient results.
+
+<section class="hero-section">
+
+    <div class="hero-left">
+        <img src="{% static 'website/images/hero-img-1.svg' %}" 
+             alt="Business Meeting" class="hero-image hero-image-left">
+    </div>
+
+    <div class="hero-right">
+        <h2 class="hero-subtitle">Your partner for</h2>
+        <h2 class="hero-title">Innovative Solutions</h2>
+
+        <p class="hero-description">
+            Boost your business efficiency and simplify your operations 
+            with custom-built business applications.  
+            We offer end-to-end system solutions, dedicated support, and services —  
+            all tailored to meet your unique needs.
         </p>
-    </header>
-    <section>
-        <h2>Our Services</h2>
-        <p>We offer a wide range of services to help you achieve your goals.</p>
-    </section>
+
+        <a href="#" class="cta-btn">Let's Talk !</a>
+    </div>
+</section>
+
+
+<section class="secondary-section">
+
+    <div class="secondary-left">
+        <h2 class="secondary-title">
+            Tailor-fit <span class="highlight">solutions</span> for your business.
+        </h2>
+         <p class="hero-description">
+            Focus on Transformation and Results (More Dynamic)
+            Future-Proof Your Business: Achieve secure, accessible, 
+            and high-impact operations. We build custom solutions using the Claris FileMaker 
+            Platform and Web-Based Applications to streamline workflows, dramatically boost productivity, 
+            and enable seamless work-from-anywhere integration.
+        </p>
+    </div>
+
+    <div class="secondary-right">
+        <img src="{% static 'website/images/hero-img-2.svg' %}"
+             alt="Developer at Work" class="hero-image hero-image-right">
+    </div>
+
+</section>
+
 {% endblock %}

@@ -11,17 +11,32 @@
 </head>
 
 <body>
-    <div>
-        <p>Welcome to Lazy Guzty Solutions</p>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/about/">Service</a>
-            <a href="/contact/">Contact</a>
-        </nav>
-    </div>
+   <header class="main-header">
+        <div class="header-left-accent">
+            <div class="header-logo">
+                <img src="{% static "website/images/lgs-logo.svg" %}" alt="lgs-logo">
+            </div>
+        </div>
+
+        <div class="header-right-nav">
+            <nav class="header-nav">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/service/" class="nav-link">Services</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
     
 
     {% block content %} 
     {% endblock %}
+
+    <footer style="text-align:center; padding:20px; background:#f0f0f0; margin-top:20px;">
+        <p>&copy; 2025 Lazy Guzty Solutions. All rights reserved.</p>
+        <p>address: Lot 2 Block 7 SM Square Executive Homes, Ugong Valenzuela City</p>
+        <p>Contact us: solutions@lazyguzty.com</p>
+        <p>Phone: 09271734952</p>
+    </footer>
+
 </body>
 </html>
